@@ -53,3 +53,8 @@ kafka-acls.sh --authorizer-properties zookeeper.connect=localhost:2184 --zk-tls-
 `
 kafka-console-consumer.sh --bootstrap-server localhost:9092,localhost:9093 --topic ssl-topic --from-beginning --consumer.config consumer.properties 
 `
+
+
+`
+zookeeper-shell.sh localhost:2184 -zk-tls-config-file zookeeper-client.properties
+`
