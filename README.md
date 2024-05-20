@@ -37,3 +37,7 @@ kafka-acls.sh --authorizer-properties zookeeper.connect=localhost:2184 --zk-tls-
 `
 kafka-acls.sh --authorizer-properties zookeeper.connect=localhost:2184 --zk-tls-config-file zoo-client.properties --add --allow-principal User:consumer --operation READ --operation DESCRIBE --group ssl-consumer-group
 `
+
+`
+kafka-acls.sh --authorizer-properties zookeeper.connect=localhost:2184 --zk-tls-config-file zookeeper-client.properties --list --topic ssl-topic
+`
