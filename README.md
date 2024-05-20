@@ -44,3 +44,14 @@ kafka-acls.sh --authorizer-properties zookeeper.connect=localhost:2184 --zk-tls-
 
 
 ### https://github.com/vinclv/data-engineering-minds-kafka/tree/main/config/sasl_ssl
+
+`
+ kafka-console-producer.sh --broker-list localhost:9092,localhost:9093 --topic ssl-topic --producer.config producer.properties
+
+`
+
+
+`
+kafka-console-consumer.sh --bootstrap-server localhost:9092,localhost:9093 --topic ssl-topic --from-beginning --consumer.config consumer.properties 
+
+`
